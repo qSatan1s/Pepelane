@@ -89,8 +89,10 @@ export default {
 <style lang="scss" scoped>
 .loader {
   display: flex;
-  justify-content: center;
+
   width: 100%;
+
+  justify-content: center;
   align-items: center;
 }
 section {
@@ -98,21 +100,26 @@ section {
 }
 .AircraftsBlock {
   display: block;
-  width: 100%;
   display: flex;
   flex-direction: row;
+
+  width: 100%;
+
   flex-wrap: wrap;
 }
 .container {
+  position: relative;
+
   display: flex;
   overflow: hidden;
-  position: relative;
-  margin-top: 3vh;
-  background: #f3f4f7;
-  border-radius: 48px;
+
   width: 100%;
   min-height: 78vh;
+  margin-top: 3vh;
   padding: 30px;
+
+  border-radius: 48px;
+  background: #f3f4f7;
 }
 
 .successfully {
@@ -122,38 +129,46 @@ section {
 
 .error_server {
   display: flex;
-  flex-flow: column;
+
   text-align: center;
+
+  flex-flow: column;
   justify-content: center;
 
   span {
-    color: #677b8f;
     margin: 2vh 0;
+
+    color: #677b8f;
   }
 
   button {
+    position: relative;
     z-index: 10;
-    cursor: pointer;
-    color: white;
-    background: #4959ff;
-    outline: none;
-    border: 0;
-    border-radius: 12px;
+    left: 50%;
+
     max-width: 161px;
     max-height: 48px;
-    position: relative;
     padding: 16px;
-    left: 50%;
+
+    cursor: pointer;
     transform: translate(-50%, 0);
+
+    color: white;
+    border: 0;
+    border-radius: 12px;
+    outline: none;
+    background: #4959ff;
   }
 }
 
 @media screen and (max-width: 600px) {
   .AircraftsBlock {
-    max-width: 100%;
     overflow: hidden;
-    justify-content: center;
+
+    max-width: 100%;
     padding: 0 0 0 0;
+
+    justify-content: center;
   }
 
   .container {

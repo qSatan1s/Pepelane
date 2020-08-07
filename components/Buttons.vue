@@ -52,32 +52,39 @@ export default {
 
 <style lang="scss" scoped>
 .button {
+  display: flex;
+
   width: 100%;
   max-height: 30px;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 40px;
+  padding: 0 20px;
+
+  justify-content: space-between;
   align-items: center;
 }
 
 .sort {
   display: flex;
+
   align-items: center;
   span {
-    font-weight: bold;
     font-size: 2.5em;
+    font-weight: bold;
+
     color: #012345;
   }
   select {
+    font-size: 2.5em;
+    font-weight: bold;
+
+    margin-left: 1vw;
+
     cursor: pointer;
-    border: 0px;
+
+    color: #4959ff;
+    border: 0;
     outline: none;
     background: none;
-    font-weight: bold;
-    font-size: 2.5em;
-    color: #4959ff;
-    margin-left: 1vw;
   }
 
   option {
@@ -88,40 +95,50 @@ export default {
 
 .addNew {
   display: flex;
+
   align-items: center;
   span {
-    font-weight: bold;
     font-size: 20px;
+    font-weight: bold;
     line-height: 140%;
+
     color: #4959ff;
   }
   button {
-    cursor: pointer;
-    margin-left: 2vw;
-    background: #4959ff;
-    border-radius: 16px;
-    border: 0;
     font-size: 25px;
-    color: white;
-    outline: none;
+
+    margin-left: 2vw;
     padding: 8px 15px;
+
+    cursor: pointer;
+
+    color: white;
+    border: 0;
+    border-radius: 16px;
+    outline: none;
+    background: #4959ff;
   }
 }
 
 @media screen and (max-width: 600px) {
   .button {
+    font-size: 8px;
+
+    position: relative;
+
     display: flex;
     overflow: hidden;
+
+    padding: 0 0;
+
     align-items: center;
     justify-content: space-around;
-    position: relative;
-    padding: 0 0;
-    font-size: 8px;
   }
 
   .addNew {
     span {
       font-size: 16px;
+
       white-space: nowrap;
     }
     button {

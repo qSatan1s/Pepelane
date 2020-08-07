@@ -5,19 +5,23 @@
 <style lang="scss" scoped>
 .lds-dual-ring {
   display: inline-block;
+
   width: 110px;
   height: 110px;
 }
 .lds-dual-ring:after {
-  content: ' ';
   display: block;
+
   width: 94px;
   height: 94px;
   margin: 8px;
-  border-radius: 50%;
+
+  content: ' ';
+  animation: lds-dual-ring 1.2s linear infinite;
+
   border: 6px solid #fcf;
   border-color: #fcf transparent #fcf transparent;
-  animation: lds-dual-ring 1.2s linear infinite;
+  border-radius: 50%;
 }
 @keyframes lds-dual-ring {
   0% {

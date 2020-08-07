@@ -44,32 +44,39 @@ header {
 
 span {
   margin-left: 1vw;
+
   color: #677b8f;
 }
 
 .header_left {
   display: flex;
+
   align-items: center;
 }
 
 .header_right {
   display: flex;
-  justify-content: space-between;
+
   width: 35vw;
+
+  justify-content: space-between;
 }
 
 .theme_mode {
-  cursor: pointer;
   width: 120px;
+
+  cursor: pointer;
 
   div {
     display: flex;
+
     align-items: center;
   }
 }
 
 .item_header {
   display: flex;
+
   align-items: center;
 }
 
@@ -81,29 +88,36 @@ span {
 
 .profle {
   span {
-    color: #012345;
     font-weight: bold;
+
     margin-right: 1vw;
+
+    color: #012345;
   }
+
   .profile_avatar {
-    border-radius: 100%;
     overflow: hidden;
+
+    border-radius: 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
   header {
-    margin-top: 1vh;
     width: 100vw;
+    margin-top: 1vh;
   }
+
   span {
     display: none;
   }
+
   .logo {
     width: 113px;
   }
+
   img {
-    margin: 0 8px 0 0px;
+    margin: 0 8px 0 0;
   }
 
   .header_right {
